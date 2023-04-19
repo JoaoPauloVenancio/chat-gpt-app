@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">chatapp</string>
+    <string name="write_something">Write something…</string>
+    <string name="limitations">Limitations</string>
+    <string name="text1">May occasionally generate incorrect information</string>
+    <string name="text2">May occasionally produce harmful instructions or biased content</string>
+    <string name="text3">Limited knowledge of world and events after 2021</string>
+    <string name="typing">Typing…</string>
+</resources>

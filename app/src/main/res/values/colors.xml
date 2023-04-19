@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_cyan">#008C77</color>
+    <color name="grayish_blue">#B1B1B4</color>
+    <color name="gray">#21212114</color>
+    <color name="black_90">#99000000</color>
+    <color name="black_66">#66000000</color>
+
+    <!-- Brand colors-->
+    <color name="primary_brand_color">#214B63</color>
+    <color name="secondary_brand_color">#008C77</color>
+    <color name="tertiary_brand_color">#006052</color>
+
+    <!-- Feedback colors-->
+    <color name="warning_feedback_color">#FFCC00</color>
+    <color name="info_feedback_color">#0071A4</color>
+
+    <!-- Background colors-->
+    <color name="primary_background_color">#F2F2F7</color>
+    <color name="secondary_background_color">#FFFFFF</color>
+    <color name="tertiary_background_color">#DADADA</color>
+    <color name="profile_background_color">#F5F5F5</color>
+    <color name="tab_chip_background_blue">#2B536A</color>
+    <color name="primary_brand_color_alpha">#2D556C</color>
+    <color name="chat_bot_background_color">#74AA9C</color>
+
+    <!-- Adverse Event colors-->
+    <color name="mild_color_symptoms">#4E8D81</color>
+    <color name="moderate_color_symptoms">#FE7314</color>
+    <color name="high_risk_color_symptoms">#D63331</color>
+    <color name="risk_of_death_color_symptoms">#842021</color>
+    <color name="death_color">#333333</color>
+
+    <!-- Text colors-->
+    <color name="primary_text_color">#000000</color>
+    <color name="secondary_text_color">#77777B</color>
+    <color name="tertiary_text_color">#B1B1B4</color>
+    <color name="quaternary_text_color">#FFFFFF</color>
+    <color name="cold_breeze">#BECAD1</color>
+    <color name="light_gray">#D9D9D9</color>
+
+    <!-- Divider colors-->
+    <color name="primary_divider_color">#C6C6C8</color>
+
+    <!--  List Patients color  -->
+    <color name="scenario_unselected">#BDFFFFFF</color>
+    <!-- Hint text color   -->
+    <color name="hint_text_color">#BCC9D0</color>
+    <!-- Chart colors -->
+    <color name="chart_fill_color">#B3DBF1</color>
+    <color name="chart_text_color">#99000000</color>
+    <!-- transparent color   -->
+    <color name="transparent_color">#00FFFFFF</color>
+
+    <!-- Prescribed Item color-->
+    <color name="allergy">#D7A012</color>
+</resources>

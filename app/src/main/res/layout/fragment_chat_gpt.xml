@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_background_color">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvDiagnosisHypotheses"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0dp"
+        android:layout_marginHorizontal="@dimen/size_10dp"
+        android:layout_marginBottom="@dimen/size_10dp"
+        app:layout_constraintBottom_toTopOf="@+id/sendMsgBlock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/groupDisclaimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/sendMsgBlock"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/size_60dp"
+        android:layout_marginTop="@dimen/size_60dp"
+        android:layout_marginEnd="@dimen/size_60dp"
+        android:layout_marginBottom="@dimen/size_100dp">
+
+        <ImageView
+            android:id="@+id/imgWarningDisclaimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_5dp"
+            android:src="@drawable/disclaimer_warning"
+            app:layout_constraintEnd_toEndOf="@+id/txtWarningDisclaimer"
+            app:layout_constraintStart_toStartOf="@+id/txtWarningDisclaimer"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtWarningDisclaimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgWarningDisclaimer"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:text="@string/limitations"
+            android:textColor="@color/grayish_blue"/>
+
+        <TextView
+            android:id="@+id/txtDisclaimerMsg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtWarningDisclaimer"
+            android:text="@string/text1"
+            android:background="@drawable/shape_send_message"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/size_35dp"
+            android:textColor="@color/grayish_blue"
+            android:padding="@dimen/size_15dp"/>
+
+        <TextView
+            android:id="@+id/txtDisclaimerMsg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDisclaimerMsg1"
+            android:text="@string/text2"
+            android:background="@drawable/shape_send_message"
+            android:textColor="@color/grayish_blue"
+            android:gravity="center"
+            android:padding="@dimen/size_15dp"
+            android:layout_marginTop="@dimen/size_10dp"/>
+
+        <TextView
+            android:id="@+id/txtDisclaimerMsg3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDisclaimerMsg2"
+            android:text="@string/text3"
+            android:background="@drawable/shape_send_message"
+            android:gravity="center"
+            android:textColor="@color/grayish_blue"
+            android:padding="@dimen/size_15dp"
+            android:layout_marginTop="@dimen/size_10dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sendMsgBlock"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/edtSendMessage"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginEnd="@dimen/size_5dp"
+            android:background="@drawable/diagnostic_hypotheses_bg"
+            android:hint="@string/write_something"
+            android:padding="@dimen/size_10dp"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnBgSendMessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btnBgSendMessage"
+            android:layout_width="@dimen/size_55dp"
+            android:layout_height="@dimen/size_50dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:src="@drawable/shape_send_message"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btnSendMessage"
+            android:layout_width="@dimen/size_20dp"
+            android:layout_height="@dimen/size_20dp"
+            android:src="@drawable/ic_send_message"
+            app:layout_constraintBottom_toBottomOf="@id/btnBgSendMessage"
+            app:layout_constraintEnd_toEndOf="@+id/btnBgSendMessage"
+            app:layout_constraintStart_toStartOf="@+id/btnBgSendMessage"
+            app:layout_constraintTop_toTopOf="@id/btnBgSendMessage" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
